@@ -33,7 +33,7 @@ Open the index.html file in your web browser to view the website.
 Desktop View:
 <p align="center">
 <a href="https://github.com/GeetikaChaudhary09/SCT_WD_1/raw/refs/heads/main/task1.mp4">
-<img src=""C:\Users\DELL\Pictures\Screenshots\Screenshot 2025-09-11 013116.png"" alt="Video Demo of the Website" width="600">
+<img src="https://github.com/GeetikaChaudhary09/SCT_WD_1/blob/main/Screenshot%202025-09-11%20013116.png" alt="Video Demo of the Website" width="600">
 </a>
 </p>
 <p align="center">Click the image above to watch a short video demo.</p>

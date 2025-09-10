@@ -31,7 +31,12 @@ Open the index.html file in your web browser to view the website.
 
 📸 Screenshots
 Desktop View:
-"C:\Users\DELL\Downloads\task1.mp4"
+<p align="center">
+<a href=""C:\Users\DELL\Downloads\task1.mp4"">
+<img src=""C:\Users\DELL\Pictures\Screenshots\Screenshot 2025-09-11 013116.png"" alt="Video Demo of the Website" width="600">
+</a>
+</p>
+<p align="center">Click the image above to watch a short video demo.</p>
 
 🤝 Contribution
 Contributions are welcome! If you have suggestions or find any bugs, feel free to open an issue or submit a pull request.

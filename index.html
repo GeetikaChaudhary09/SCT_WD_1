@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fashion Fit - Style Guide</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navigation Menu -->
+    <nav id="navbar" class="fixed w-full bg-transparent text-white py-4 px-6 flex justify-between items-center z-50 transition-colors duration-300">
+        <div class="text-2xl font-bold">Fashion Fit</div>
+        <ul class="flex space-x-6">
+            <li><a href="#home" class="nav-link hover:text-yellow-400">Home</a></li>
+            <li><a href="#guide" class="nav-link hover:text-yellow-400">Style Guide</a></li>
+            <li><a href="#trends" class="nav-link hover:text-yellow-400">Trends</a></li>
+            <li><a href="#login" class="nav-link hover:text-yellow-400" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section with Image Background -->
+    <section id="home" class="relative h-screen flex items-center justify-center text-white text-center p-4">
+        <div class="hero-bg-image"></div>
+        <div class="bg-overlay"></div>
+        <div class="max-w-2xl hero-content slide-fade">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Discover Your Perfect Style</h1>
+            <p class="text-lg mb-6">Outfit recommendations for every body type, event, and skin tone. Trend ideas from top influencers.</p>
+            <button onclick="scrollToGuide()" class="bg-yellow-500 hover:bg-yellow-600 px-6 py-3 rounded-lg font-semibold transition">Explore Now</button>
+        </div>
+    </section>
+    <!-- Styles to Steal Section -->
+    <section class="styles-section">
+        <div class="header">
+            <h1>STYLES TO STEAL</h1>
+            <p>Inspired by influencer</p>
+        </div>
+        <div class="cards-container">
+            
+            <div class="style-card">
+                <img src="https://singh-shivani.github.io/Merlin-Fashion/images/index-img/girl1.png" alt="Prena Massey">
+                <div class="card-content">
+                    <p class="influencer-name">Prena Massey</p>
+                    <p class="influencer-handle">@preenamassey</p>
+                    <h3 class="style-name">Denim Jacket + Dress + White Sneakers = Street Chic</h3>
+                    <a href="#" class="get-the-look"><span></span> GET THE LOOK</a>
+                </div>
+            </div>
+           
+            <div class="style-card">
+                <img src="https://singh-shivani.github.io/Merlin-Fashion/images/index-img/girl2.png" alt="Karishma Rawat">
+                <div class="card-content">
+                    <p class="influencer-name">Karishma Rawat</p>
+                    <p class="influencer-handle">@karishmarawat</p>
+                    <h3 class="style-name">Side Stripe Jacket + Crop Top + Mini = Sporty Street</h3>
+                    <a href="#" class="get-the-look"><span></span> GET THE LOOK</a>
+                </div>
+            </div>
+           
+            <div class="style-card">
+                <img src="https://singh-shivani.github.io/Merlin-Fashion/images/index-img/girl3.png" alt="Angeline Pongender">
+                <div class="card-content">
+                    <p class="influencer-name">Angeline Pongender</p>
+                    <p class="influencer-handle">@angelinepg</p>
+                    <h3 class="style-name">Crop Top + Chunky Sneakers = Coffee Date On The Streets</h3>
+                    <a href="#" class="get-the-look"><span></span> GET THE LOOK</a>
+                </div>
+            </div>
+           
+            <div class="style-card">
+                <img src="https://singh-shivani.github.io/Merlin-Fashion/images/index-img/girl4.png" alt="Shivani Boruah">
+                <div class="card-content">
+                    <p class="influencer-name">Shivani Boruah</p>
+                    <p class="influencer-handle">@shivani.boruah</p>
+                    <h3 class="style-name">Dress + Sneakers = Summer Diaries</h3>
+                    <a href="#" class="get-the-look"><span></span> GET THE LOOK</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Style Guide Section -->
+<section id="guide" class="py-16 px-4 md:px-16 bg-white text-gray-800">
+    <h2 class="text-3xl font-bold text-center mb-8">Style Guide</h2>
+
+    <!-- User Input Form -->
+    <div class="max-w-xl mx-auto mb-10 bg-gray-50 p-6 rounded-lg shadow-lg">
+        <form id="styleForm" class="space-y-4">
+            <div>
+                <label for="event" class="block font-medium mb-1">Select Event</label>
+                <select id="event" class="form-select rounded w-full border-gray-300">
+                    <option value="">-- Choose an event --</option>
+                    <option value="beach">Beach Day</option>
+                    <option value="wedding">Wedding Day</option>
+                    <option value="sangeet">Sangeet Night</option>
+                    <option value="fresher">Fresher Party</option>
+                    <option value="convocation">Convocation Ceremony</option>
+                    <option value="office">Office Fit</option>
+                </select>
+            </div>
+            <div>
+                <label for="category" class="block font-medium mb-1">Category</label>
+                <select id="category" class="form-select rounded w-full border-gray-300">
+                    <option value="">-- Choose category --</option>
+                    <option value="women">Women</option>
+                    <option value="men">Men</option>
+                    <option value="kids">Kids</option>
+                </select>
+            </div>
+            <div>
+                <label for="bodytype" class="block font-medium mb-1">Body Type</label>
+                <select id="bodytype" class="form-select rounded w-full border-gray-300">
+                    <option value="">-- Choose body type --</option>
+                    <option value="slim">Slim</option>
+                    <option value="average">Average</option>
+                    <option value="curvy">Curvy</option>
+                </select>
+            </div>
+            <div>
+                <label for="skintone" class="block font-medium mb-1">Skin Tone</label>
+                <select id="skintone" class="form-select rounded w-full border-gray-300">
+                    <option value="">-- Choose skin tone --</option>
+                    <option value="fair">Fair</option>
+                    <option value="medium">Medium</option>
+                    <option value="dark">Dark</option>
+                </select>
+            </div>
+            <button type="submit" class="bg-yellow-500 hover:bg-yellow-600 px-4 py-2 rounded-lg font-semibold w-full">Get Recommendations</button>
+        </form>
+    </div>
+
+    <!-- Recommendations -->
+    <div id="recommendations" class="grid md:grid-cols-3 gap-6 hidden">
+        <!-- Cards will be dynamically added here -->
+    </div>
+</section>
+ 
+
+<!-- Trends Section -->
+<section id="trends" class="py-16 px-4 md:px-16 bg-gray-100 text-gray-800">
+    <h2 class="text-3xl font-bold text-center mb-8">Trending Now</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow p-4">
+            <img src="https://i.pinimg.com/736x/d9/b0/f9/d9b0f94f01fb2ecbd33c9041c95fac5d.jpg" alt="Trend 1" class="rounded mb-4 w-full h-40 object-contain">
+            <h3 class="font-semibold mb-2">Elegant Office Look</h3>
+            <p class="text-sm mb-3">Perfect structured outfits for professional settings.</p>
+            <a href="https://www.example.com" target="_blank" class="text-yellow-500 hover:underline">Shop Now</a>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow p-4">
+            <img src="https://images-eu.ssl-images-amazon.com/images/I/511CNn3FgKL._AC_UL750_SR750,750_.jpg" alt="Trend 2" class="rounded mb-4 w-full h-40 object-contain">
+            <h3 class="font-semibold mb-2">Bold Clubwear</h3>
+            <p class="text-sm mb-3">Make a statement with these trendy styles.</p>
+            <a href="https://www.example.com" target="_blank" class="text-yellow-500 hover:underline">Shop Now</a>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow p-4">
+            <img src="https://www.moderngentlemanmagazine.com/wp-content/uploads/2025/04/Tropical-Breeze.jpeg" alt="Trend 3" class="rounded mb-4 w-full h-40 object-contain">
+            <h3 class="font-semibold mb-2">Beach Essentials</h3>
+            <p class="text-sm mb-3">Stay cool and stylish by the sea.</p>
+            <a href="https://www.example.com" target="_blank" class="text-yellow-500 hover:underline">Shop Now</a>
+        </div>
+    </div>
+</section>
+
+<!-- Explore Collections Slideshow -->
+
+    <!-- Slideshow Container -->
+    <div class="slideshow-container">
+    <!-- Header -->
+    <div class="flex justify-between items-center mb-6 no-select">
+        <h1 class="text-3xl font-bold text-gray-800">Explore More</h1>
+        <div class="flex space-x-4">
+            <button id="prevBtn" class="prev-next-btn text-gray-600 hover:text-gray-900 transition-colors duration-200">Prev</button>
+            <div class="text-gray-400">/</div>
+            <button id="nextBtn" class="prev-next-btn text-gray-600 hover:text-gray-900 transition-colors duration-200">Next</button>
+        </div>
+    </div>
+
+    <!-- Slideshow Container -->
+    <div class="relative overflow-hidden">
+        <div id="sliderTrack" class="slider-track">
+            <!-- Slide 1 -->
+            <div class="slide-item">
+                <div class="slide-image-container">
+                    <img src="https://singh-shivani.github.io/Merlin-Fashion/images/index-img/bogdan-glisik-2WgOPYJuPsU-unsplash%20(1).jpg" class="slide-image" alt="Slide 1" />
+                </div>
+                <div class="slide-content">
+                    <h3 class="text-lg font-semibold text-gray-800">Just Like Your Way To Conquer</h3>
+          
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="slide-item">
+                <div class="slide-image-container">
+                    <img src="https://singh-shivani.github.io/Merlin-Fashion/images/index-img/calvin-lupiya--yPg8cusGD8-unsplash.jpg" class="slide-image" alt="Slide 2" />
+                </div>
+                <div class="slide-content">
+                    <h3 class="text-lg font-semibold text-gray-800">Stands Out like the Sun</h3>
+                </div>
+            </div>
+            
+            <!-- Slide 3 -->
+            <div class="slide-item">
+                <div class="slide-image-container">
+                    <img src="https://singh-shivani.github.io/Merlin-Fashion/images/index-img/anton-levin-P8prss71psk-unsplash.jpg" class="slide-image" alt="Slide 3" />
+                </div>
+                <div class="slide-content">
+                    <h3 class="text-lg font-semibold text-gray-800">For the Young, Wild & Stylish</h3>
+                </div>
+            </div>
+            
+            <!-- Slide 4 -->
+            <div class="slide-item">
+                <div class="slide-image-container">
+                    <img src="https://nextlevelwardrobe.com/wp-content/uploads/2020/08/Screen-Shot-2020-08-02-at-4.56.50-PM-768x767.png" class="slide-image" alt="Slide 4" />
+                </div>
+                <div class="slide-content">
+                    <h3 class="text-lg font-semibold text-gray-800">Minimal jewellery</h3>
+                </div>
+            </div>
+
+            <!-- More Slides Added for Scroll Effect -->
+            <div class="slide-item">
+                <div class="slide-image-container">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0wlU5bI0Zo-tmhvMefQeT5ud9lLgQGx_uis9H9ObU_rtshVdoH85jeG22xL9kfkIYqyk&usqp=CAU" class="slide-image" alt="Slide 5" />
+                </div>
+                <div class="slide-content">
+                    <h3 class="text-lg font-semibold text-gray-800">Bags that Define Style</h3>
+                </div>
+            </div>
+
+            <div class="slide-item">
+                <div class="slide-image-container">
+                    <img src="https://i.pinimg.com/736x/95/0d/26/950d2649dbebb3649456df70c192ea5e.jpg" class="slide-image" alt="Slide 6" />
+                </div>
+                <div class="slide-content">
+                    <h3 class="text-lg font-semibold text-gray-800">Shoes that speaks Luxury</h3>
+                </div>
+            </div>
+            
+            <div class="slide-item">
+                <div class="slide-image-container">
+                    <img src="https://i.pinimg.com/originals/34/0d/e9/340de973ac7a1f6ea459c268518db69c.jpg" class="slide-image" alt="Slide 7" />
+                </div>
+                <div class="slide-content">
+                    <h3 class="text-lg font-semibold text-gray-800">Dressed in Culture</h3>
+                </div>
+            </div>
+
+            <div class="slide-item">
+                <div class="slide-image-container">
+                    <img src="https://boho-dress.com/cdn/shop/products/white-lace-backless-boho-maxi-dress-brynlee-s-dresses-433_800x.jpg?v=1746771682" class="slide-image" alt="Slide 8" />
+                </div>
+                <div class="slide-content">
+                    <h3 class="text-lg font-semibold text-gray-800">Boho</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-6 text-center">
+        <p>&copy; 2025 Fashion Fit. All rights reserved.</p>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-lg">
+          <div class="modal-header bg-indigo-800 text-white">
+            <h5 class="modal-title" id="loginModalLabel">Login</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body p-5">
+            <form id="loginForm">
+              <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control rounded" id="email" required>
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control rounded" id="password" required>
+              </div>
+              <button type="submit" class="btn btn-indigo-600 w-full hover:bg-indigo-700">Login</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>

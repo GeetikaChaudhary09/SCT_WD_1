@@ -1,0 +1,240 @@
+body {
+            font-family: 'Montserrat', sans-serif;
+        
+        }
+        body {
+        /* This ensures the content covers the full width and removes default padding/margin */
+        margin: 0;
+        padding: 0;
+        background-color: #f3f4f6;
+    }
+        .navbar-scrolled {
+            background-color: #1a202c !important;
+            transition: background-color 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #f59e0b !important;
+        }
+        .slide-fade {
+            animation: fadeSlide 1s ease forwards;
+        }
+        @keyframes fadeSlide {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .hero-bg-image {
+            background-image: url('https://plus.unsplash.com/premium_photo-1664202526559-e21e9c0fb46a?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZmFzaGlvbnxlbnwwfHwwfHx8MA%3D%3D');
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        .bg-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better text readability */
+            z-index: 0;
+        }
+        .hero-content {
+            z-index: 1; /* Ensure content is on top of the image and overlay */
+            position: relative;
+        }
+        .styles-section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .styles-section .header {
+            margin-bottom: 20px;
+        }
+
+        .styles-section .header h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin: 0;
+            color: #333;
+        }
+
+        .styles-section .header p {
+            font-size: 1rem;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        .styles-section .cards-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .styles-section .style-card {
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            flex: 1 1 200px;
+            max-width: 280px;
+            transition: transform 0.3s ease;
+        }
+
+        .styles-section .style-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .styles-section .style-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .styles-section .style-card .card-content {
+            padding: 15px;
+            text-align: left;
+        }
+
+        .styles-section .style-card .influencer-name {
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin: 0;
+            color: #333;
+        }
+
+        .styles-section .style-card .influencer-handle {
+            font-size: 0.8rem;
+            color: #888;
+            margin-top: 2px;
+        }
+
+        .styles-section .style-card .style-name {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin: 10px 0;
+            color: #555;
+            line-height: 1.4;
+        }
+
+        .styles-section .style-card .get-the-look {
+            display: inline-block;
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9rem;
+            margin-top: 10px;
+        }
+
+        .styles-section .style-card .get-the-look span {
+            font-size: 1.2rem;
+            line-height: 1;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        
+        @media (max-width: 768px) {
+            .styles-section .cards-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .styles-section .style-card {
+                width: 90%;
+                max-width: none;
+            }
+        }
+           .slideshow-container {
+        /* Center the slideshow and give it a maximum width */
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+    
+    .slider-track {
+        display: flex;
+        gap: 1.5rem; /* Space between slides */
+        overflow-x: auto; /* Enable horizontal scrolling */
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 1rem;
+    }
+
+    /* Hide scrollbar for a cleaner look */
+    .slider-track::-webkit-scrollbar {
+        display: none;
+    }
+
+    .slider-track {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+    }
+
+    .slide-item {
+        /* Make slides non-shrinkable and give them a fixed width */
+        flex-shrink: 0;
+        width: 280px;
+        background-color: white;
+        border-radius: 12px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .slide-item:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .slide-image-container {
+        width: 100%;
+        height: 350px;
+        overflow: hidden;
+        border-radius: 12px 12px 0 0;
+    }
+
+    .slide-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .slide-content {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .no-select {
+        user-select: none;
+    }
+
+    .prev-next-btn {
+        transition: transform 0.2s;
+    }
+
+    .prev-next-btn:hover {
+        transform: scale(1.1);
+    }
+    /* New styles to fix the image display issue */
+        .card-image-container {
+            width: 100%;
+            height: 200px; /* Adjust this height as needed */
+            overflow: hidden;
+            border-radius: 0.5rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .card-image {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+
+

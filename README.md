@@ -32,7 +32,7 @@ Open the index.html file in your web browser to view the website.
 📸 Screenshots
 Desktop View:
 <p align="center">
-<a href="geetikachaudhary09.github.io.">
+<a href="https://geetikachaudhary09.github.io/SCT_WD_1/">
 <img src="https://github.com/GeetikaChaudhary09/SCT_WD_1/blob/main/Screenshot%202025-09-11%20013116.png" alt="Video Demo of the Website" width="600">
 </a>
 </p>

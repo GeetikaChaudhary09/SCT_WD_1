@@ -20,15 +20,6 @@ Tailwind CSS: Employed for a utility-first styling approach, allowing for rapid 
 
 JavaScript: Implemented to power all interactive elements, including the recommendation form and the image slideshow.
 
-🚀 How to Run
-Clone the repository to your local machine:
-git clone https://github.com/your-username/fashion-fit.git
-
-Navigate to the project directory:
-cd fashion-fit
-
-Open the index.html file in your web browser to view the website.
-
 📸 Screenshots
 Desktop View:
 <p align="center">
